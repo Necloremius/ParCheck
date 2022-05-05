@@ -6,14 +6,5 @@ fn pch(num: i128) -> &'static str { if num % 2 == 0 { "even" } else { "odd" }} /
 
 #[launch]
 fn rocket() -> Rocket<Build> {
-  rocket::build().mount("/check/<num>", routes![pch])
+  rocket::build().mount("/", routes![pch])
 }
-
-
-
-
-
-
-
-
-
