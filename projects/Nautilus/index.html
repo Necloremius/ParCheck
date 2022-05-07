@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Nautilus" content="signup and user auth project w/ JS, HTML, TailwindCSS, Rocket.rs, and PostgreSQL.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Rust, Rocket, PostgreSQL, SQL, Rocket.rs, TailwindCSS, Vercel">
+  <meta name="author" content="Necloremius">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brightthingy:'#fffdd4',
+            magenta: '#c16266',
+            yellowthingy: '#be8a59',
+            greenthingy: '90b061',
+            graythingy:'#9da39d',
+            lightgray: '#D3D3D3'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body style="background-color:#292d34;">
+
+
+
+  <h1 class="monacofont font-bold text-9xl m-10 text-center text-brightthingy headertextshadow tracking-tight hover:underline">
+    🪝🐋    Nautilus    🐋🪝
+  </h1>
+
+
+  <div class="user">
+    <header class="user__header">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt="" />
+        <h1 class="user__title">A lightweight and simple sign-up form</h1>
+    </header>
+    
+    <form class="form">
+        <div class="form__group">
+            <input type="text" placeholder="Username" class="form__input" required/>
+        </div>
+        
+        <div class="form__group">
+            <input type="email" placeholder="Email" class="form__input" required/>
+        </div>
+        
+        <div class="form__group">
+            <input type="password" placeholder="Password" class="form__input" required/>
+        </div>
+        
+        <button class="btn" type="button">Register</button>
+    </form>
+</div>
+
+</body>
+<script src="main.js"></script>
+</html>
+
+

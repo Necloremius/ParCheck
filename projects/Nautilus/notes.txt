@@ -1,0 +1,5 @@
+1. Get ID, username, password, email from form and send it to Rocket via Diesel 
+2. POST request to enter this info into the PostgreSQL database 
+3. Login endpoint checks if user's username and password are matched
+4. Display cookie emoji as its a template project
+ 
